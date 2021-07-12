@@ -3,6 +3,8 @@ import { MenuItems } from "./MenuItems"
 import Logo from "../../images/Next-logo.png"
 import "./MyNavbar.css"
 import { Button } from "../Button/Button"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
 
 function MyNavbar() {
   const [clicked, setClick] = useState(false)
@@ -18,7 +20,7 @@ function MyNavbar() {
         </a>
       </div>
       <div className="menu-icon" onClick={clickMenu}>
-        <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+        <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
       </div>
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
