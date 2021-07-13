@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import MyNavbar from "../components/Navbar/MyNavbar"
 import "./layout.css"
-import { render } from "react-dom"
+import Footer from "../components/Footer/Footer"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -20,6 +20,7 @@ const Layout = ({ children }) => {
     <div>
       <MyNavbar></MyNavbar>
       <div>{children}</div>
+      <Footer></Footer>
     </div>
   )
 }
