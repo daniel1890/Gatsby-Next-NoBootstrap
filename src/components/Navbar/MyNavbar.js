@@ -5,6 +5,7 @@ import "./MyNavbar.css"
 import { Button } from "../Button/Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "gatsby"
 
 function MyNavbar() {
   const [clicked, setClick] = useState(false)
@@ -15,9 +16,9 @@ function MyNavbar() {
   return (
     <nav className="NavbarItems">
       <div className="navbar-logo0">
-        <a href="/">
+        <Link to="./">
           <img className="navbar-logo" src={Logo} alt="logo"></img>
-        </a>
+        </Link>
       </div>
       <div className="menu-icon" onClick={clickMenu}>
         <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>

@@ -1,7 +1,7 @@
 import Image1 from "../../images/image_moustuin1.jpg"
 
 export const homeObjOne = {
-    greyBg: false,
+    greyBg: true,
     lightText: false,
     lightTextDesc: true,
     topLine: "Next",
@@ -14,7 +14,7 @@ export const homeObjOne = {
     alt: "moestuin",
   },
   homeObjTwo = {
-    greyBg: true,
+    greyBg: false,
     lightText: false,
     lightTextDesc: true,
     topLine: "Next",
