@@ -1,28 +1,27 @@
 import React from "react"
-import "./Cards3.css"
+import "./Cards4.css"
 import { Link } from "gatsby"
 import { Button } from "../Button/Button"
 import { StaticImage } from "gatsby-plugin-image"
 
-function Cards3() {
+function Cards4() {
   return (
     <div className="pricing__section">
       <div className="pricing__wrapper">
         <div className="pricing__container">
-          <Link to="/sign-up" className="pricing__container-card3">
+          <Link to="/sign-up" className="pricing__container-card4">
             <div className="pricing__container-cardInfo">
               <div className="icon">
                 <StaticImage
                   className="card__image"
-                  src="../../images/hardlopen.jpeg"
-                  alt="hardlopende mensen"
+                  src="../../images/-david,rinsampessy.jpeg"
+                  alt="david"
                 ></StaticImage>
               </div>
-              <h3>Voor Cliënten</h3>
+              <h3>David Rinsampessy</h3>
               <p>
-                Ben jij op zoek naar een veilige en rustige woonomgeving die
-                kleinschalig is, waar contact en betrokkenheid centraal staan?
-                Dan is NEXT jouw volgende stap!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
+                saepe.
               </p>
               <Button
                 className="btn"
@@ -33,20 +32,20 @@ function Cards3() {
               </Button>
             </div>
           </Link>
-          <Link to="/sign-up" className="pricing__container-card3 test">
+
+          <Link to="/sign-up" className="pricing__container-card4 test">
             <div className="pricing__container-cardInfo">
               <div className="icon">
                 <StaticImage
                   className="card__image"
-                  src="../../images/wandelen.jpeg"
+                  src="../../images/-jup,wassink.jpeg"
                   alt="wandelende mensen"
                 ></StaticImage>
               </div>
-              <h3>Voor Verwijzers</h3>
+              <h3>Jup Wassink</h3>
               <p>
-                Next werkt op basis van wetenschappelijke kennis en
-                maatschappelijke inzichten om te komen tot een integraal
-                zorgaanbod. Neem contact op voor een oriënterend gesprek.
+                Et nesciunt adipisci voluptatem eos blanditiis eum odio
+                necessitatibus qui.
               </p>
               <Button
                 className="btn"
@@ -57,20 +56,44 @@ function Cards3() {
               </Button>
             </div>
           </Link>
-          <Link to="/sign-up" className="pricing__container-card3">
+
+          <Link to="/sign-up" className="pricing__container-card4">
             <div className="pricing__container-cardInfo">
               <div className="icon">
                 <StaticImage
                   className="card__image"
-                  src="../../images/davidjip.jpeg"
+                  src="../../images/-rick,wubs.jpeg"
                   alt="david en jip bespreken iets"
                 ></StaticImage>
               </div>
-              <h3>Over Ons</h3>
+              <h3>Rick Wubs</h3>
               <p>
-                Het contact met naasten van onze bewoners heeft voor ons een
-                hoge prioriteit. Met onze collega's zijn wij 24 uur per dag
-                bereikbaar. Neem contact met ons op als u vragen heeft.
+                Architecto modi perspiciatis deserunt ut quas unde ad illo
+                assumenda voluptas?
+              </p>
+              <Button
+                className="btn"
+                buttonSize="btn--medium"
+                buttonColor="primary"
+              >
+                Meer Informatie
+              </Button>
+            </div>
+          </Link>
+
+          <Link to="/sign-up" className="pricing__container-card4">
+            <div className="pricing__container-cardInfo">
+              <div className="icon">
+                <StaticImage
+                  className="card__image"
+                  src="../../images/-amir,behi.jpeg"
+                  alt="david en jip bespreken iets"
+                ></StaticImage>
+              </div>
+              <h3>Amir Behi</h3>
+              <p>
+                Molestias culpa quae eius nisi iste libero, sapiente officiis,
+                suscipit illum?
               </p>
               <Button
                 className="btn"
@@ -83,7 +106,12 @@ function Cards3() {
           </Link>
         </div>
       </div>
+      <div className="div btn__allewerknemers">
+        <Button className="btn" buttonSize="btn--large" buttonColor="primary">
+          Alle Werknemers
+        </Button>
+      </div>
     </div>
   )
 }
-export default Cards3
+export default Cards4

@@ -11,7 +11,7 @@
 }
 
 .btn:hover {
-  padding: 8px 20px;
+  transform: scale(1.06);
   transition: all 0.3s ease-out;
   background: rgb(187, 144, 4);
   color: #ffffff;

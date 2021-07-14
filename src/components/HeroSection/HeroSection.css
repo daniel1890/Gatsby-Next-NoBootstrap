@@ -30,7 +30,7 @@
 }
 
 .top-line {
-  color: #023770;
+  color: #f09c26;
   font-size: 24px;
   line-height: 16px;
   font-weight: 700;
@@ -48,11 +48,24 @@
 }
 
 .dark {
+  color: #023770;
+}
+
+.black {
   color: black;
 }
 
+.light {
+  color: white;
+}
+
+.orange {
+  color: #f09c26;
+}
+
 .greyBg {
-  background-color: rgb(163, 163, 163);
+  background-color: #1c2237;
+  /*background-color: rgb(163, 163, 163); */
 }
 
 .home__hero-subtitle {
