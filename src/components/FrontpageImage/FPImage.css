@@ -1,5 +1,13 @@
 .frontpage-image {
+  margin-top: 0.5rem;
   width: 100%;
   max-height: 500px;
-  object-fit: fill;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and(max-width: 1200px) {
+  .frontpage-image {
+    max-height: 100px;
+  }
 }
