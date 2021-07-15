@@ -4,7 +4,7 @@
     rgb(207, 207, 207) 0%,
     rgb(153, 153, 153) 100%
   );
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,6 +70,7 @@
 
   .nav-menu {
     display: flex;
+
     flex-direction: column;
     width: 100%;
     height: 625px;
@@ -130,7 +131,7 @@
 
   .nav-links-mobile:hover {
     background: #023770;
-    color: rgb(187, 144, 4);
+    color: #dfa320;
     transition: 250ms;
   }
 

@@ -6,7 +6,7 @@ function FPImage() {
   return (
     <StaticImage
       className="frontpage-image"
-      src="../images/foto1.png"
+      src="../../images/skyline-arnhem.jpg"
       alt="next-locatie"
     ></StaticImage>
   )

@@ -15,11 +15,9 @@ function MyNavbar() {
 
   return (
     <nav className="NavbarItems">
-      <div className="navbar-logo0">
-        <Link to="./">
-          <img className="navbar-logo" src={Logo} alt="logo"></img>
-        </Link>
-      </div>
+      <Link to="./">
+        <img className="navbar-logo" src={Logo} alt="logo"></img>
+      </Link>
       <div className="menu-icon" onClick={clickMenu}>
         <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
       </div>
