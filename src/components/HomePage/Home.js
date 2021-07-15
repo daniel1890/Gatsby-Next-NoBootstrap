@@ -19,7 +19,6 @@ function Home() {
       <HeroSection {...homeObjOne} />
       <ContainerFade {...top} />
       <Cards4></Cards4>
-      <ContainerFade />
     </div>
   )
 }

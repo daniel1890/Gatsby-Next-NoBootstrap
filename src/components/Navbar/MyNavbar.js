@@ -15,7 +15,7 @@ function MyNavbar() {
 
   return (
     <nav className="NavbarItems">
-      <Link to="./">
+      <Link to="/">
         <img className="navbar-logo" src={Logo} alt="logo"></img>
       </Link>
       <div className="menu-icon" onClick={clickMenu}>

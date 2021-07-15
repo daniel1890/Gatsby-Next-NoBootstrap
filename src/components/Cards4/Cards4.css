@@ -23,7 +23,11 @@
 }
 
 .pricing__container-card4:nth-child(odd) {
-  margin: 0 100px;
+  margin: 0 50px;
+}
+
+.pricing__container-card4:nth-child(even) {
+  margin: 0 50px;
 }
 
 .pricing__container {
