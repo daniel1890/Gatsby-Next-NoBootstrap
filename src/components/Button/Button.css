@@ -1,5 +1,6 @@
 :root {
   --primary: #dfa320;
+  --blue: #00098d;
 }
 
 .btn {
@@ -20,6 +21,10 @@
 
 .btn--primary {
   background-color: var(--primary);
+}
+
+.btn--secondary {
+  background-color: var(--blue);
 }
 
 .btn-outline {

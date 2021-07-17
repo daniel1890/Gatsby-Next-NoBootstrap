@@ -3,11 +3,21 @@
   background: #fafafa;
 }
 
-.cards__container {
+.cards__container__3cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.cards__container__4cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: auto;
-  grid-gap: 2rem;
+  grid-gap: 4rem;
   justify-content: center;
   align-items: center;
   padding: 0 10%;
@@ -37,9 +47,9 @@
   color: #1c2237;
 }
 
-.card__btn {
-  display: inline-block;
-  position: sticky;
+.singlecard__info .btn__holder {
+  margin-top: auto;
+  padding-bottom: 1rem;
 }
 
 .card__image {

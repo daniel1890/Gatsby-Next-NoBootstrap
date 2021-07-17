@@ -1,5 +1,7 @@
 import Image1 from "../../images/image_moustuin1.jpg"
 
+import AmirFoto from "../../images/-amir,behi.jpeg"
+
 export const homeObjOne = {
   greyBg: true,
   lightText: true,
@@ -28,3 +30,12 @@ export const homeObjOne = {
     alt: "moestuin",
   }
 */
+
+export const mdwks = {
+  imageSrc: AmirFoto,
+  cardTitle: "Amir Behi",
+  cardDesc:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, magnam!",
+  btnDesc: "Meer Informatie",
+  cardsInARow: "cards__container__4cards",
+}

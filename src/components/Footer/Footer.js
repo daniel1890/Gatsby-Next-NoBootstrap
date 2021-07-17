@@ -1,15 +1,6 @@
 import React from "react"
 import "./Footer.css"
-import { Button } from "../Button/Button"
 import { Link } from "gatsby"
-import {
-  FaFacebook,
-  FaInstagram,
-  FaYoutube,
-  FaTwitter,
-  FaLinkedin,
-} from "react-icons/fa"
-import { MdFingerprint } from "react-icons/md"
 
 function Footer() {
   let today = new Date()
