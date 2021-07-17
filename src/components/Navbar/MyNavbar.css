@@ -47,8 +47,7 @@
 
 /* hover effect voor de text in de navbar */
 .nav-links:hover {
-  background-color: rgb(218, 218, 218);
-  border-radius: 4px;
+  color: #ffc400;
   transition: all 0.2s ease-out;
 }
 
@@ -125,7 +124,7 @@
     margin: 2rem auto;
     border-radius: 4px;
     width: 80%;
-    background: rgb(187, 144, 4);
+    background: #dfa320;
     text-decoration: none;
     color: #fff;
     font-size: 1.5rem;

@@ -1,5 +1,5 @@
 import React from "react"
-import OverOnsPage from "../../components/OverOnsPage/OverOnsPage"
+import OverOnsPage from "../components/OverOnsPage/OverOnsPage"
 
 function OverOns() {
   return <OverOnsPage></OverOnsPage>

@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
     title: "Over Ons",
-    url: "/over-ons/over-ons",
+    url: "/over-ons",
     cName: "nav-links",
   },
   {
