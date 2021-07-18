@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../layout"
 import { klusHero } from "./Data"
+import HeroSection from "../HeroSection/HeroSection"
 import TwoCards from "./TwoCards/TwoCards"
 import RowText from "./RowText/RowText"
 import { rij2__tekstContent } from "./Data"
@@ -20,7 +21,9 @@ function OverOnsPage() {
           <RowText {...rij2__tekstContent[1]} className="col2"></RowText>
         </div>
 
-        <div id="rij3__heroimage"></div>
+        <div id="rij3__heroimage">
+          <HeroSection {...klusHero}></HeroSection>
+        </div>
       </div>
     </Layout>
   )

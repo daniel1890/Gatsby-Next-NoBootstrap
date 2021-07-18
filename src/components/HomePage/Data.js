@@ -31,11 +31,21 @@ export const homeObjOne = {
   }
 */
 
-export const mdwks = {
-  imageSrc: AmirFoto,
-  cardTitle: "Amir Behi",
-  cardDesc:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, magnam!",
-  btnDesc: "Meer Informatie",
-  cardsInARow: "cards__container__4cards",
-}
+export const mdwks = [
+  {
+    imageSrc: AmirFoto,
+    cardTitle: "Amir Behi",
+    cardDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, magnam!",
+    btnDesc: "Meer Informatie",
+    cardsInARow: "cards__container__4cards",
+  },
+  {
+    imageSrc: AmirFoto,
+    cardTitle: "Amir Behi",
+    cardDesc:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, magnam!",
+    btnDesc: "Meer Informatie",
+    cardsInARow: "cards__container__4cards",
+  },
+]

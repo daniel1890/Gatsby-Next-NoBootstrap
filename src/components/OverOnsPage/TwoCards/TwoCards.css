@@ -27,6 +27,11 @@
   color: #fff;
 }
 
+.twocard__cardinfo .bottom__text {
+  margin-top: auto;
+  padding-bottom: 0.25rem;
+}
+
 .twocard__cardinfo .btn__wrapper {
   margin-top: auto;
   padding-bottom: 1rem;

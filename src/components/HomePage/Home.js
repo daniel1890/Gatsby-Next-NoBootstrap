@@ -8,13 +8,12 @@ import Cards4 from "../Cards4/Cards4"
 import FPImage from "../FrontpageImage/FPImage"
 import ContainerFade from "../ContainerFade/ContainerFade"
 
-function Home({ data }) {
+function Home() {
   const top = {
     position: true,
   }
 
   const medewerkers = mdwks
-  console.log(medewerkers)
 
   return (
     <div>

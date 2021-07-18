@@ -71,3 +71,11 @@
   margin-bottom: 24px;
   color: #fff;
 }
+
+@media screen and (max-width: 835px) {
+  .singlecard__container {
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,5 +1,7 @@
 .rowtext__container .text__wrapper {
-  padding: 0 20%;
+  padding: 0 25%;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
 }
 
 .rowtext__container h3 {

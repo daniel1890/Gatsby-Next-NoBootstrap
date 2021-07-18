@@ -25,7 +25,9 @@ function TwoCards() {
             persoonlijk herstel op elkaar zijn afgestemd."{" "}
           </p>
           <br />
-          <p>David Rinsampessy, mede-oprichter Next Arnhem</p>
+          <p className="bottom__text">
+            David Rinsampessy, mede-oprichter Next Arnhem
+          </p>
         </div>
       </div>
     </div>

@@ -4,27 +4,26 @@ import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Button } from "../Button/Button"
 import { graphql } from "gatsby"
 
-function Cards({ imageSrc, cardTitle, cardDesc, btnDesc, cardsInARow }) {
+function Cards(props) {
+  console.log(props)
+
   return (
     <div className="cards__section">
-      <div className={cardsInARow}>
+      <div className={props[0].cardsInARow}>
         <div className="singlecard__container">
           <div className="singlecard__info">
             <div className="cardimage__wrapper">
-              <GatsbyImage
-                image={imageSrc}
-                className="card__image"
-              ></GatsbyImage>
+              <img src={props[0].imageSrc} className="card__image"></img>
             </div>
-            <h3>{cardTitle}</h3>
-            <p>{cardDesc}</p>
+            <h3>{props[0].cardTitle}</h3>
+            <p>{props[0].cardDesc}</p>
             <div className="btn__holder">
               <Button
                 className="card__btn"
                 buttonSize="btn--medium"
                 buttonColor="primary"
               >
-                {btnDesc}
+                {props[0].btnDesc}
               </Button>
             </div>
           </div>
