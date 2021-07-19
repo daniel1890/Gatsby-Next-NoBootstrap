@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
   return (
     <div>
       <MyNavbar></MyNavbar>
-      <div>{children}</div>
+      <div className="layout__container">{children}</div>
       <ContainerFade></ContainerFade>
       <Footer></Footer>
     </div>
