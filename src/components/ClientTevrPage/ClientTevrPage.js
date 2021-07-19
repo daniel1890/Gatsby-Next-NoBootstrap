@@ -14,7 +14,7 @@ function ClientTevrPage() {
   const Login = details => {
     console.log(details)
 
-    if (details.password == adminUser.password) {
+    if (details.password === adminUser.password) {
       console.log("Logged In!")
       setUser(true)
     } else {
@@ -30,7 +30,7 @@ function ClientTevrPage() {
 
   return (
     <div>
-      {user == true ? (
+      {user === true ? (
         <Layout>
           <p>FORMULIER LOGGED IN</p>
           <Button onClick={Logout}>Log Uit</Button>

@@ -1,23 +1,20 @@
 import React from "react"
 import HeroSection from "../HeroSection/HeroSection"
 import Cards from "../Cards/Cards"
-import { homeObjOne, homeObjTwo, AlgemeneCards } from "./Data"
+import { homeObjOne, AlgemeneCards } from "./Data"
 import { mdwks } from "./Data"
-import Cards3 from "../Cards3/Cards3"
-import Cards4 from "../Cards4/Cards4"
 import FPImage from "../FrontpageImage/FPImage"
 import ContainerFade from "../ContainerFade/ContainerFade"
 import { Button } from "../Button/Button"
+import Layout from "../layout"
 
 function Home() {
   const top = {
     position: true,
   }
 
-  const medewerkers = mdwks
-
   return (
-    <div>
+    <Layout>
       <FPImage />
       <Cards {...AlgemeneCards}></Cards>
       <ContainerFade />
@@ -32,7 +29,7 @@ function Home() {
           Alle Werknemers
         </Button>
       </div>
-    </div>
+    </Layout>
   )
 }
 

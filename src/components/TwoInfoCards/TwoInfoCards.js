@@ -1,4 +1,3 @@
-import { text } from "@fortawesome/fontawesome-svg-core"
 import React from "react"
 import { Button } from "../Button/Button"
 
@@ -9,19 +8,27 @@ function TwoInfoCards(props) {
     <div className="twocard__container">
       {props.cards.map((card, index) => (
         <div
+          key={index}
           className={
             props.lightShadow
-              ? "twocard__card light__shadow"
-              : "twocard__card dark__shadow"
+              ? "twocard__card light__shadow light__card"
+              : "twocard__card dark__shadow dark__card"
           }
         >
           <div
             className="twocard__cardinfo"
             style={{ height: props.cardHeight }}
           >
-            <h3>{card.header}</h3>
+            <h3 className={props.lightShadow ? "dark__text" : "light__text"}>
+              {card.header}
+            </h3>
             {card.content.map((content, index) => (
-              <p key={index}>{content}</p>
+              <p
+                key={index}
+                className={props.lightShadow ? "dark__text" : "light__text"}
+              >
+                {content}
+              </p>
             ))}
             {card.bottomtext !== "" ? (
               <p className="bottom__text">{card.bottomtext}</p>

@@ -1,7 +1,4 @@
 import React from "react"
-import { Button } from "../Button/Button"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 import "./HeroSection.css"
 
 function HeroSection({

@@ -1,8 +1,6 @@
 import React from "react"
 import "./Cards.css"
-import { StaticImage, GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Button } from "../Button/Button"
-import { graphql } from "gatsby"
 
 function Cards(props) {
   console.log(props)
@@ -10,8 +8,8 @@ function Cards(props) {
   return (
     <div className="cards__section">
       <div className={props.cardsInARow}>
-        {props.parts.map(card => (
-          <div className="singlecard__container">
+        {props.parts.map((card, index) => (
+          <div key={index} className="singlecard__container">
             <div className="singlecard__info">
               <div className="cardimage__wrapper">
                 <img

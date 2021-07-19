@@ -14,9 +14,12 @@
 .btn:hover {
   transform: scale(1.06);
   transition: all 0.3s ease-out;
-  background: rgb(187, 144, 4);
   color: #ffffff;
   transition: 250ms;
+}
+
+.btn:hover {
+  filter: brightness(120%);
 }
 
 .btn--primary {

@@ -19,7 +19,7 @@ function LoginPage({ Login, error }) {
             Deze inhoud is met een wachtwoord beschermd, vul hieronder het
             wachtwoord in om de inhoud te bekijken.
           </h3>
-          {error != "" ? <div className="error">{error}</div> : ""}
+          {error !== "" ? <div className="error">{error}</div> : ""}
           <div className="login__form-group">
             <label htmlFor="password">Wachtwoord:</label>
             <input
@@ -32,7 +32,12 @@ function LoginPage({ Login, error }) {
               value={details.password}
             />
           </div>
-          <Button as="input" type="submit" buttonSize="btn--medium">
+          <Button
+            as="input"
+            type="submit"
+            buttonSize="btn--medium"
+            buttonStyle="btn--blue"
+          >
             Enter
           </Button>
         </div>

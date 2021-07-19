@@ -82,7 +82,7 @@
 }
 
 .home__hero-img {
-  max-width: 100%;
+  max-width: auto;
   max-height: 550px;
   height: auto;
   margin-top: 0;

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #696d74;
+  background: linear-gradient(45deg, #596281 0%, #1c2237 100%);
 }
 
 .login__container form {
@@ -24,8 +24,8 @@
   z-index: 1;
   background-image: linear-gradient(
     to bottom right,
-    #a36200,
-    rgb(255, 159, 42)
+    #e79600,
+    rgb(255, 148, 16)
   );
   border-radius: 0.1rem;
 }
@@ -39,7 +39,7 @@
 }
 
 .login__container form .login__form-inner h3 {
-  color: rgb(87, 87, 87);
+  color: rgb(46, 46, 46);
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 30px;
