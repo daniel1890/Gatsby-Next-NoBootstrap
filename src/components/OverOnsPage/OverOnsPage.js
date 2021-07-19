@@ -3,8 +3,9 @@ import Layout from "../layout"
 import { klusHero } from "./Data"
 import HeroSection from "../HeroSection/HeroSection"
 import TwoCards from "./TwoCards/TwoCards"
+import TwoInfoCards from "../TwoInfoCards/TwoInfoCards"
 import RowText from "./RowText/RowText"
-import { rij2__tekstContent } from "./Data"
+import { rij2__tekstContent, rij1__tekstContent } from "./Data"
 
 import "./OverOnsPage.css"
 
@@ -13,12 +14,11 @@ function OverOnsPage() {
     <Layout>
       <div className="overons__container">
         <div id="rij1__twocards">
-          <TwoCards />
+          <TwoInfoCards {...rij1__tekstContent}></TwoInfoCards>
         </div>
 
         <div id="rij2__tekst">
-          <RowText {...rij2__tekstContent[0]} className="col1"></RowText>
-          <RowText {...rij2__tekstContent[1]} className="col2"></RowText>
+          <TwoInfoCards {...rij2__tekstContent}></TwoInfoCards>
         </div>
 
         <div id="rij3__heroimage">
