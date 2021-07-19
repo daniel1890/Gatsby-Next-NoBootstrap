@@ -16,7 +16,7 @@ function LoginPage({ Login, error }) {
       <div className="form-inner">
         <h3>Deze inhoud is met een wachtwoord beschermd.</h3>
         <h3>Vul hieronder het wachtwoord in om de inhoud te bekijken.</h3>
-        {/* ERROR */}
+        {error != "" ? <div className="error">{error}</div> : ""}
         <div className="form-group">
           <label htmlFor="password">Wachtwoord:</label>
           <input

@@ -32,7 +32,7 @@ function MyNavbar() {
           )
         })}
       </ul>
-      <Button>Contact</Button>
+      <Button buttonStyle="btn--blue">Contact</Button>
     </nav>
   )
 }

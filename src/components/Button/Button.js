@@ -1,9 +1,9 @@
-import React from 'react';
-import './Button.css';
+import React from "react"
+import "./Button.css"
 
-const STYLES = ['btn--primary', 'btn--outline'];
+const STYLES = ["btn--primary", "btn--blue", "btn--outline"]
 
-const SIZES = ['btn--medium', 'btn--large'];
+const SIZES = ["btn--medium", "btn--large"]
 
 export const Button = ({
   children,
@@ -14,9 +14,9 @@ export const Button = ({
 }) => {
   const checkButtonStyle = STYLES.includes(buttonStyle)
     ? buttonStyle
-    : STYLES[0];
+    : STYLES[0]
 
-  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
+  const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
   return (
     <button
@@ -26,5 +26,5 @@ export const Button = ({
     >
       {children}
     </button>
-  );
-};
+  )
+}
