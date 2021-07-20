@@ -88,3 +88,9 @@
     margin-right: auto;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .singlecard__container {
+    max-width: 90vw;
+  }
+}

@@ -73,6 +73,20 @@
 
 @media screen and (max-width: 600px) {
   .login__container .login__form {
-    max-width: 80%;
+    max-width: 86vw;
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
+
+  .login__form-inner .login__form-group input {
+    max-width: 65vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .login__container .login__form {
+    max-width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 }

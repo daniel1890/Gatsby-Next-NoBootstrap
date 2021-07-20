@@ -83,8 +83,6 @@
 @media screen and (max-width: 400px) {
   .twocard__card {
     width: 80vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
     padding: 0 0;
   }
 }
@@ -92,7 +90,5 @@
 @media screen and (max-width: 350px) {
   .twocard__card {
     width: 90vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
   }
 }
