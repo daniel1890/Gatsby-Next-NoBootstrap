@@ -54,10 +54,11 @@
 
 .card__image {
   height: 14rem;
+  max-width: 100%;
 }
 
 .wide__image {
-  width: 14rem;
+  width: 20rem;
 }
 
 .small__image {

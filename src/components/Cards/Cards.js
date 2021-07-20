@@ -14,7 +14,11 @@ function Cards(props) {
               <div className="cardimage__wrapper">
                 <img
                   src={card.imageSrc}
-                  className="card__image"
+                  className={
+                    props.wideCards
+                      ? "card__image wide__image"
+                      : "card__image small__image"
+                  }
                   alt={card.cardTitle}
                 ></img>
               </div>

@@ -18,13 +18,7 @@ function HeroSection({
       className={greyBg ? "home__hero-section greyBg" : "home__hero-section"}
     >
       <div className="container">
-        <div
-          className="row home__hero-row"
-          style={{
-            display: "flex",
-            flexDirection: imgStart === "start" ? "row-reverse" : "row",
-          }}
-        >
+        <div className="row">
           <div className="col">
             <div className="home__hero-text-wrapper">
               <div className={lightText ? "top-line" : "top-line dark"}>
