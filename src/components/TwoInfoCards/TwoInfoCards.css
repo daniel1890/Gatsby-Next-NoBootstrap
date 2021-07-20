@@ -13,6 +13,9 @@
   border-radius: 4px;
   padding: 0.5rem;
   text-decoration: none;
+  margin: 0 2rem;
+  min-height: 500px;
+  overflow: hidden;
 }
 
 .dark__card {
@@ -20,7 +23,7 @@
 }
 
 .light__card {
-  background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
+  background: linear-gradient(45deg, #e6ecee 0%, #eff4f7 100%);
 }
 
 .dark__shadow {
@@ -69,10 +72,27 @@
   margin-bottom: 24px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1218px) {
   .twocard__card {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .twocard__card {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    padding: 0 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .twocard__card {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
   }
 }

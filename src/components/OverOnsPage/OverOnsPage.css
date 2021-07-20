@@ -6,15 +6,6 @@
 
 .overons__container #rij2__tekst {
   padding: 5rem 0;
-  display: flex;
-}
-
-#rij2__tekst .col1 {
-  width: 50%;
-}
-
-#rij2__tekst .col2 {
-  width: 50%;
 }
 
 #rij2__tekst {

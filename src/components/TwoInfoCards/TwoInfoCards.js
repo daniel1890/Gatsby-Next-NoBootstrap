@@ -17,7 +17,7 @@ function TwoInfoCards(props) {
         >
           <div
             className="twocard__cardinfo"
-            style={{ height: props.cardHeight }}
+            style={{ minHeight: props.cardHeight }}
           >
             <h3 className={props.lightShadow ? "dark__text" : "light__text"}>
               {card.header}
@@ -33,7 +33,7 @@ function TwoInfoCards(props) {
             {card.bottomtext !== "" ? (
               <p className="bottom__text">{card.bottomtext}</p>
             ) : (
-              ""
+              card.btn !== ""("")
             )}
             {card.btn !== "" ? (
               <div className="btn__wrapper ">

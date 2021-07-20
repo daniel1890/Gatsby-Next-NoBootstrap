@@ -37,7 +37,7 @@ export const rij1__tekstContent = {
 }
 
 export const rij2__tekstContent = {
-  cardHeight: "700px",
+  cardHeight: "750px",
   lightShadow: true,
   cards: [
     {

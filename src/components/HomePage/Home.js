@@ -17,9 +17,7 @@ function Home() {
     <Layout>
       <FPImage />
       <Cards {...AlgemeneCards}></Cards>
-      <ContainerFade />
       <HeroSection {...homeObjOne} />
-      <ContainerFade {...top} />
       <Cards {...mdwks}></Cards>
       <div
         className="btn__allewerknemers"

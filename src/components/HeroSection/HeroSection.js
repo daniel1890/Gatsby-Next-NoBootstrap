@@ -18,7 +18,13 @@ function HeroSection({
       className={greyBg ? "home__hero-section greyBg" : "home__hero-section"}
     >
       <div className="container">
-        <div className="row">
+        <div className="hero__row">
+          <div className="col">
+            <div className="home__hero-img-wrapper">
+              <img src={img} alt={alt} className="home__hero-img" />
+            </div>
+          </div>
+
           <div className="col">
             <div className="home__hero-text-wrapper">
               <div className={lightText ? "top-line" : "top-line dark"}>
@@ -36,12 +42,6 @@ function HeroSection({
               >
                 {description}
               </p>
-            </div>
-          </div>
-
-          <div className="col">
-            <div className="home__hero-img-wrapper">
-              <img src={img} alt={alt} className="home__hero-img" />
             </div>
           </div>
         </div>
