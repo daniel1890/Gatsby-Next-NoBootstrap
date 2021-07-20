@@ -6,7 +6,7 @@
   row-gap: 4rem;
   justify-content: center;
   align-items: center;
-  padding: 2rem 10%;
+  padding: 7rem 10%;
 }
 
 .twocard__card {
@@ -82,7 +82,7 @@
 
 @media screen and (max-width: 400px) {
   .twocard__card {
-    width: 80vw;
+    width: 90vw;
     padding: 0 0;
   }
 }
