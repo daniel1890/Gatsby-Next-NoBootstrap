@@ -25,6 +25,7 @@ export const homeObjOne = {
 
 export const mdwks = {
   cardsInARow: "cards__container__4cards",
+  wideCards: false,
   parts: [
     {
       imageSrc: DavidFoto,
@@ -59,6 +60,7 @@ export const mdwks = {
 
 export const AlgemeneCards = {
   cardsInARow: "cards__container__3cards",
+  wideCards: true,
   parts: [
     {
       imageSrc: HardloopImage,

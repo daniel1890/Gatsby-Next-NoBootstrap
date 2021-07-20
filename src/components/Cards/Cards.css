@@ -53,12 +53,19 @@
 }
 
 .card__image {
-  height: 13rem;
-  width: 12rem;
+  height: 14rem;
+}
+
+.wide__image {
+  width: 14rem;
+}
+
+.small__image {
+  width: 14rem;
 }
 
 .cardimage__wrapper {
-  margin: 24px 0;
+  margin: 20px 0;
 }
 
 .singlecard__container h3 {

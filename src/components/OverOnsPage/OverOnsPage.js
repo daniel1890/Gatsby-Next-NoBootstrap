@@ -3,9 +3,12 @@ import Layout from "../layout"
 import { klusHero } from "./Data"
 import HeroSection from "../HeroSection/HeroSection"
 import TwoInfoCards from "../TwoInfoCards/TwoInfoCards"
+import "../ImageAndDesc/ImageAndDesc"
+
 import { rij2__tekstContent, rij1__tekstContent } from "./Data"
 
 import "./OverOnsPage.css"
+import ImageAndDesc from "../ImageAndDesc/ImageAndDesc"
 
 function OverOnsPage() {
   return (

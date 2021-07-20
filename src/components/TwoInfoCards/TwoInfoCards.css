@@ -6,7 +6,7 @@
   row-gap: 4rem;
   justify-content: center;
   align-items: center;
-  padding: 2rem 15%;
+  padding: 2rem 10%;
 }
 
 .twocard__card {
@@ -20,7 +20,7 @@
 }
 
 .light__card {
-  background: linear-gradient(45deg, #dbdbdb 0%, #f1f1f1 100%);
+  background: linear-gradient(45deg, #ffffff 0%, #ffffff 100%);
 }
 
 .dark__shadow {
@@ -69,7 +69,7 @@
   margin-bottom: 24px;
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 1200px) {
   .twocard__card {
     width: 75%;
     margin-left: auto;
