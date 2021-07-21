@@ -82,6 +82,7 @@ export const AlgemeneCards = {
       cardDesc:
         "Het contact met naasten van onze bewoners heeft voor ons een hoge prioriteit. Met onze collega's zijn wij 24 uur per dag bereikbaar. Neem contact met ons op als u vragen heeft.",
       btnDesc: "Meer Informatie",
+      btnLink: "/over-ons",
     },
   ],
 }

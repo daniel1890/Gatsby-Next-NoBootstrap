@@ -1,6 +1,7 @@
 import React from "react"
 import "./Cards.css"
 import { Button } from "../Button/Button"
+import { Link } from "gatsby"
 
 function Cards(props) {
   console.log(props)
@@ -25,13 +26,15 @@ function Cards(props) {
               <h3>{card.cardTitle}</h3>
               <p>{card.cardDesc}</p>
               <div className="btn__holder">
-                <Button
-                  className="card__btn"
-                  buttonSize="btn--medium"
-                  buttonColor="primary"
-                >
-                  {card.btnDesc}
-                </Button>
+                <Link to={card.btnLink}>
+                  <Button
+                    className="card__btn"
+                    buttonSize="btn--medium"
+                    buttonColor="primary"
+                  >
+                    {card.btnDesc}
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

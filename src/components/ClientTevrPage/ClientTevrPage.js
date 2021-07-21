@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Layout from "../layout"
 import LoginPage from "../LoginPage/LoginPage"
 import { Button } from "../Button/Button"
+import ClientTevrForm from "../ClientTevrForm/ClientTevrForm"
 
 function ClientTevrPage() {
   const adminUser = {
@@ -32,7 +33,7 @@ function ClientTevrPage() {
     <div>
       {user === true ? (
         <Layout>
-          <p>FORMULIER LOGGED IN</p>
+          <ClientTevrForm></ClientTevrForm>
           <Button onClick={Logout}>Log Uit</Button>
         </Layout>
       ) : (
