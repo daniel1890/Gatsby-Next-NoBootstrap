@@ -18,7 +18,7 @@ function HeroSection({
       className={greyBg ? "home__hero-section greyBg" : "home__hero-section"}
     >
       <div className="container">
-        <div className="hero__row">
+        <div className={imgStart ? "hero__row" : "hero__row reverse-column"}>
           <div className="col">
             <div className="home__hero-img-wrapper">
               <img src={img} alt={alt} className="home__hero-img" />
