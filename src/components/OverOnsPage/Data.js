@@ -1,4 +1,4 @@
-import KlusImage from "../../images/Klusteam-scaled.jpeg"
+import KlusImage from "../../images/Klussen.png"
 
 export const klusHero = {
   greyBg: false,
@@ -38,7 +38,7 @@ export const rij1__tekstContent = {
 
 export const rij2__tekstContent = {
   cardHeight: "750px",
-  lightShadow: true,
+  lightShadow: false,
   cards: [
     {
       header: "Onze Visie",

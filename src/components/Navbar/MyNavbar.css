@@ -97,6 +97,7 @@
     background-color: #023770;
     color: #dfa320;
     border-radius: 0;
+    transition: all 0.5s ease;
   }
 
   .menu-icon {
@@ -130,5 +131,11 @@
 
   .NavbarItems Button {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav-links {
+    text-align: start;
   }
 }
