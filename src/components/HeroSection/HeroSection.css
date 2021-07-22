@@ -25,6 +25,11 @@
   padding: 0 auto;
 }
 
+.col {
+  grid-auto-flow: column;
+  direction: ltr;
+}
+
 .top-line {
   color: #f09c26;
   font-size: 24px;
@@ -61,6 +66,11 @@
 .greyBg {
   background-color: #1c2237;
   /*background-color: rgb(163, 163, 163); */
+}
+
+.home__hero-text-wrapper {
+  padding: 1rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .home__hero-subtitle {

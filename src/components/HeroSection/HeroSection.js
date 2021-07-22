@@ -19,13 +19,13 @@ function HeroSection({
     >
       <div className="container">
         <div className={imgStart ? "hero__row" : "hero__row reverse-column"}>
-          <div className="col">
+          <div className="col col1">
             <div className="home__hero-img-wrapper">
               <img src={img} alt={alt} className="home__hero-img" />
             </div>
           </div>
 
-          <div className="col">
+          <div className="col col2">
             <div className="home__hero-text-wrapper">
               <div className={lightText ? "top-line" : "top-line dark"}>
                 {topLine}

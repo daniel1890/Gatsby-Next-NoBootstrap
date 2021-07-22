@@ -83,7 +83,7 @@ export const bespreekHero = {
   topLine: "Wachtlijst",
   headLine: "Wachtlijst",
   description:
-    "Ambulante begeleiding kan gemiddeld vanaf de aanmelding en intake na 0-3 weken starten. Voor een woonplek op een van onze locaties voor groepswonen of intensieve begeleiding met 24-uurs bereikbaarheid geldt dat de wachttijd afhankelijk is van de doorstroom en de match met de locatie en medebewoners. De gemiddelde wachttijd hiervoor is 6-12 maanden.",
+    "Ambulante begeleiding kan gemiddeld vanaf de aanmelding en intake na 0-3 weken starten. Voor een woonplek op een van onze locaties voor groepswonen of intensieve begeleiding met 24-uurs bereikbaarheid geldt dat de wachttijd afhankelijk is van de doorstroom en de match met de locatie en de medebewoners. De gemiddelde wachttijd hiervoor is 6-12 maanden",
   buttonLabel: "",
   imgStart: false,
   img: bespreekImage,
