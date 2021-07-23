@@ -19,7 +19,7 @@ function TwoInfoCards(props) {
             className="twocard__cardinfo"
             style={{ minHeight: props.cardHeight }}
           >
-            <h3 className={props.lightShadow ? "dark__text" : "light__text"}>
+            <h3 className={props.lightShadow ? "dark__text" : "dark__header"}>
               {card.header}
             </h3>
             {card.content.map((content, index) => (

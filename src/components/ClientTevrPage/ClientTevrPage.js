@@ -33,8 +33,8 @@ function ClientTevrPage() {
     <div>
       {user === true ? (
         <Layout>
-          <ClientTevrForm></ClientTevrForm>
           <Button onClick={Logout}>Log Uit</Button>
+          <ClientTevrForm></ClientTevrForm>
         </Layout>
       ) : (
         <LoginPage Login={Login} error={error}></LoginPage>
