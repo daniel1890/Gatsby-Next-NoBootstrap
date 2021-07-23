@@ -33,7 +33,9 @@ function ClientTevrPage() {
     <div>
       {user === true ? (
         <Layout>
-          <Button onClick={Logout}>Log Uit</Button>
+          <div style={{ margin: "2rem 0 0 6rem" }}>
+            <Button onClick={Logout}>Log Uit</Button>
+          </div>
           <ClientTevrForm></ClientTevrForm>
         </Layout>
       ) : (
