@@ -48,7 +48,7 @@ function ClientTevrForm() {
             handleSubmit={handleSubmit}
             cardHeader="Sluit de begeleiding goed bij je aan?"
           ></RadioButtonGroupCard>
-          <div style={{ padding: "1rem 0 0 0" }}>
+          <div style={{ padding: "2rem 0 4rem 0" }}>
             <Button type="submit">Stuur Formulier</Button>
           </div>
         </form>

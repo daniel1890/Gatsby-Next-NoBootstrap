@@ -138,4 +138,11 @@
   .nav-links {
     text-align: start;
   }
+
+  .navbar-logo {
+    display: flex;
+    display: inline-block;
+    transform: translate(-45%, 0);
+    padding-left: 1rem;
+  }
 }
