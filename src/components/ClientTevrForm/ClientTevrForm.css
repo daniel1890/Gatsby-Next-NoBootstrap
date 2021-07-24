@@ -19,6 +19,18 @@
   max-width: 700px;
 }
 
+.textarea-container {
+  margin-top: 4rem;
+  padding-right: 0.3rem;
+}
+
+.radioform-textarea {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 150px;
+  resize: none;
+}
+
 @media screen and (max-width: 800px) {
   .radio-group-form-container {
     max-width: 85%;
@@ -37,6 +49,13 @@
   .form-header-card-container {
     max-width: 85%;
   }
+
+  .textarea-container {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -45,6 +64,10 @@
   }
 
   .form-header-card-container {
+    max-width: 90vw;
+  }
+
+  .textarea-container {
     max-width: 90vw;
   }
 }

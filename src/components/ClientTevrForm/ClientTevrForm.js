@@ -9,6 +9,7 @@ function ClientTevrForm() {
   const [q3, setQ3] = useState("")
   const [q4, setQ4] = useState("")
   const [q5, setQ5] = useState("")
+  const [text, setText] = useState({ tips: "Schrijf hier jouw tips..." })
 
   const labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
   const values = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
@@ -28,7 +29,7 @@ function ClientTevrForm() {
 
   const handleSubmit = e => {
     e.preventDefault()
-    const data = { q1, q2, q3, q4, q5 }
+    const data = { q1, q2, q3, q4, q5, ...text }
     const json = JSON.stringify(data, null, 4)
     console.log(json)
   }
@@ -88,6 +89,12 @@ function ClientTevrForm() {
             flexRow={false}
           ></RadioButtonGroupCard>
 
+          <TextArea
+            textAreaHeader="Welke tips heb je voor ons om de begeleiding te verbeteren?"
+            text={text}
+            setText={setText}
+          ></TextArea>
+
           <div
             className="radio-form-footer"
             style={{ padding: "2rem 0 4rem 0" }}
@@ -111,6 +118,21 @@ const FormHeaderCard = () => {
           invullen. Dit is volledig anoniem.
         </p>
       </div>
+    </div>
+  )
+}
+
+const TextArea = ({ textAreaHeader, text, setText }) => {
+  return (
+    <div className="textarea-container">
+      <h3>{textAreaHeader}</h3>
+      <textarea
+        className="radioform-textarea"
+        onChange={e => setText({ ...text, tips: e.target.value })}
+        value={text.tips}
+      >
+        Schrijf hier jouw tips....
+      </textarea>
     </div>
   )
 }
