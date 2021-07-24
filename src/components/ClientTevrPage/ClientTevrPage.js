@@ -27,6 +27,7 @@ function ClientTevrPage() {
   const Logout = () => {
     console.log("Logout")
     setUser(false)
+    setError("")
   }
 
   return (

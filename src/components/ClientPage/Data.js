@@ -8,15 +8,16 @@ export const rij1__tekstContent = {
   cards: [
     {
       header: "Next Arnhem voor de cliënten",
-      content: ["Wij zijn er voor jou."],
+      content: [],
+      bottomtext: "Wij zijn er voor jou.",
       btn: "",
     },
     {
       header: "",
       content: [
         `"Next heeft mij de ruimte geboden om veerkracht te ontwikkelen. Hierdoor kon ik vanuit stilstand die door de heftige ervaringen onstaan was, weer verder mijn pad bewandelen."`,
-        "Cliënt (24), Next.",
       ],
+      bottomtext: "Cliënt (24), Next.",
       btn: "",
     },
   ],

@@ -22,7 +22,7 @@
   bottom: -5px;
   right: -5px;
   z-index: 1;
-  background-image: linear-gradient(to bottom right, #a16900, rgb(255, 123, 0));
+  background-image: linear-gradient(to bottom right, #ffc60b, rgb(255, 123, 0));
   border-radius: 0.1rem;
 }
 
