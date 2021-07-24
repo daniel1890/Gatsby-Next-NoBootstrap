@@ -2,19 +2,37 @@
   border: black;
   background-color: #1c2237;
   color: white;
-  padding: 2rem;
+  padding: 1.5rem 1.5rem;
   border-radius: 2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.radio-btn-container {
+  flex-wrap: wrap;
+}
+
 .radio-btn-container .radio {
-  margin: 0 8px 0 0;
+  margin: 5px 8px 0 0;
 }
 
 .radio-container {
-  width: 600px;
+  max-width: 700px;
 }
 
 .radio-form-info {
   margin-left: 0.3rem;
+}
+
+@media screen and (max-width: 800px) {
+  .radio-container {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .radio-container {
+    max-width: 90vw;
+  }
 }

@@ -25,7 +25,7 @@ function MyNavbar() {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-              <Link as="a" className={item.cName} href={item.url}>
+              <Link as="a" className={item.cName} to={item.url}>
                 {item.title}
               </Link>
             </li>

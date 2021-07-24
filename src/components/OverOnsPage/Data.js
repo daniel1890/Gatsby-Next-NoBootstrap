@@ -29,8 +29,8 @@ export const rij1__tekstContent = {
       header: "",
       content: [
         "Next werkt op basis van actuele wetenschappelijke kennis en maatschappelijke inzichten om in samenwerking met partners te komen tot een integraal zorg aanbod waarin klinisch, maatschappelijk en persoonlijk herstel op elkaar zijn afgestemd.",
-        "David Rinsampessy, mede-oprichter Next Arnhem.",
       ],
+      bottomtext: "David Rinsampessy, mede-oprichter Next Arnhem.",
       btn: "",
     },
   ],

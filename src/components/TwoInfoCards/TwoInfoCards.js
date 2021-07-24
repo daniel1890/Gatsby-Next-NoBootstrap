@@ -33,7 +33,7 @@ function TwoInfoCards(props) {
             {card.bottomtext !== "" ? (
               <p className="bottom__text">{card.bottomtext}</p>
             ) : (
-              card.btn !== ""("")
+              ""
             )}
             {card.btn !== "" ? (
               <div className="btn__wrapper ">

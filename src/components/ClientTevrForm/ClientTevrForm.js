@@ -8,10 +8,27 @@ function ClientTevrForm() {
   const [q2, setQ2] = useState("")
   const [q3, setQ3] = useState("")
   const [q4, setQ4] = useState("")
+  const [q5, setQ5] = useState("")
+
+  const labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+  const values = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+  const valuesQ5 = [
+    "Niet mee eens",
+    "Gedeeltelijk niet mee eens",
+    "Mee eens",
+    "Helemaal mee eens",
+  ]
+
+  const labelsQ5 = [
+    "Niet mee eens - ik heb dezelfde soort of intensievere begeleiding nodig.",
+    "Gedeeltelijk niet mee eens - met een lichtere vorm van hulp red ik het goed.",
+    "Mee eens - voor nu heb ik geen verdere hulp nodig. Misschien op een later moment.",
+    "Helemaal mee eens - ik heb geen verdere hulp meer nodig.",
+  ]
 
   const handleSubmit = e => {
     e.preventDefault()
-    const data = { q1, q2, q3, q4 }
+    const data = { q1, q2, q3, q4, q5 }
     const json = JSON.stringify(data, null, 4)
     console.log(json)
   }
@@ -24,31 +41,58 @@ function ClientTevrForm() {
           <RadioButtonGroupCard
             questionState={q1}
             setQuestionState={setQ1}
-            handleSubmit={handleSubmit}
             cardHeader="Hoe prettig heb je de hulp/begeleiding door NEXT ervaren? (verplicht)"
+            labels={labels}
+            values={values}
+            formInfo={true}
+            flexRow={true}
           ></RadioButtonGroupCard>
 
           <RadioButtonGroupCard
             questionState={q2}
             setQuestionState={setQ2}
-            handleSubmit={handleSubmit}
             cardHeader="Heb je met de begeleiding goed aan je doelen gewerkt?"
+            labels={labels}
+            values={values}
+            formInfo={true}
+            flexRow={true}
           ></RadioButtonGroupCard>
 
           <RadioButtonGroupCard
             questionState={q3}
             setQuestionState={setQ3}
-            handleSubmit={handleSubmit}
             cardHeader="Is de begeleiding goed bereikbaar voor je?"
+            labels={labels}
+            values={values}
+            formInfo={true}
+            flexRow={true}
           ></RadioButtonGroupCard>
 
           <RadioButtonGroupCard
             questionState={q4}
             setQuestionState={setQ4}
-            handleSubmit={handleSubmit}
             cardHeader="Sluit de begeleiding goed bij je aan?"
+            labels={labels}
+            values={values}
+            formInfo={true}
+            flexRow={true}
           ></RadioButtonGroupCard>
-          <div style={{ padding: "2rem 0 4rem 0" }}>
+
+          <RadioButtonGroupCard
+            questionState={q5}
+            setQuestionState={setQ5}
+            cardHeader="Heb je voldoende aan de hulp gehad om zelf verder te gaan?"
+            labels={labelsQ5}
+            values={valuesQ5}
+            formInfo={false}
+            flexRow={false}
+          ></RadioButtonGroupCard>
+
+          <div
+            className="radio-form-footer"
+            style={{ padding: "2rem 0 4rem 0" }}
+          >
+            <h4>Alvast bedankt voor jouw medewerking!</h4>
             <Button type="submit">Stuur Formulier</Button>
           </div>
         </form>
