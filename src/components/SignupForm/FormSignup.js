@@ -43,6 +43,7 @@ const FormSignup = ({ submitForm }) => {
             value={values.email}
             onChange={handleChange}
           />
+          {errors.email && <p>{errors.email}</p>}
         </div>
 
         <div className="signupform-inputs">
