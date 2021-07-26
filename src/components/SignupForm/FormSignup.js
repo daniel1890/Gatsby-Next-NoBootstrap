@@ -39,7 +39,7 @@ const FormSignup = ({ submitForm }) => {
             type="email"
             name="email"
             className="signupform-input"
-            placeholder="gebruiker@mail.com"
+            placeholder="Voorbeeld: gebruiker@email.com"
             value={values.email}
             onChange={handleChange}
           />
@@ -77,7 +77,7 @@ const FormSignup = ({ submitForm }) => {
           {errors.message && <p>{errors.message}</p>}
         </div>
         <Button className="signupform-input-btn" as="input" type="submit">
-          Stuur Bericht
+          Verzenden
         </Button>
       </form>
     </div>
