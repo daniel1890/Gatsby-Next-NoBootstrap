@@ -3,7 +3,7 @@
   width: 1000px;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  border-radius: 10px;
+  border-radius: 3px;
   height: 600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -82,13 +82,16 @@
   color: #fff;
 }
 
-.signupform .signupform-input {
+.signupform .signupform-inputs .signupform-input {
   margin-bottom: 0.5rem;
+}
+
+.signupform .signupform-inputs {
+  width: 100%;
   margin-left: 1rem;
-  margin-right: auto;
+  margin-right: 1rem;
   padding-left: 1rem;
-  padding-right: auto;
-  width: 26rem;
+  padding-right: 1rem;
 }
 
 .signupform-inputs p {
