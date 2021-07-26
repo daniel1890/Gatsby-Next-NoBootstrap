@@ -13,7 +13,6 @@ const Form = () => {
   return (
     <>
       <div className="signupform-container">
-        <span className="close-btn">x</span>
         <div className="signupform-content-left"></div>
 
         {!isSubmitted ? <FormSignup submitForm={submitForm} /> : <FormSucces />}

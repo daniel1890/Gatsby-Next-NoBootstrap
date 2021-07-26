@@ -9,16 +9,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.close-btn {
-  position: absolute;
-  top: 2%;
-  right: 3%;
-  font-size: 1.5rem;
-  z-index: 1;
-  color: #fff;
-  cursor: pointer;
-}
-
 .signupform-content-left {
   background: linear-gradient(90deg, rgb(216, 141, 44) 0%, #fb8500 100%);
   border-radius: 3px 0 0 3px;
