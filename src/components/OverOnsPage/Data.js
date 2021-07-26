@@ -1,4 +1,4 @@
-import KlusImage from "../../images/Klussen.png"
+import KlusImage from "../../images/Klusteam-scaled.jpeg"
 
 export const klusHero = {
   greyBg: false,
@@ -6,8 +6,10 @@ export const klusHero = {
   lightTextDesc: false,
   topLine: "Bouwen aan de Toekomst",
   headLine: "Next@Work",
-  description:
-    "Uiteindelijk werken we samen toe naar een stabiele toekomst. Dit bevorderen wij op verschillende manieren: Wij zoeken samen met de cliënt naar de juiste woonvorm. Zo kan het zijn dat een cliënt begint met begeleid wonen, en later doorgroeit naar een zelfstandige studio met ambulante hulp om vanuit daar weer verder te groeien. Sociale contacten zijn van groot belang. Daarom organiseren wij sociale activiteiten (zoals samen avondeten, sporten, zwemmen in de zomer) en initiëren wij contact tussen verschillende cliënten. Het is van groot belang dat de cliënt tot zelfontplooiing komt. Daarom stimuleren wij in studie & werk. Samen kijken wij welke studie gepast zou kunnen zijn en in welke vorm. Voor werk werken wij samen met Next@Work, waar activerend werk wordt geboden. Vanuit Next bieden wij tevens diverse mogelijkheden, zoals cognitieve gedragstherapie, maar ook creatieve ontplooiing door middel van zangles, pianoles, rollenspellen en theater.",
+  description: [
+    "Uiteindelijk werken we samen toe naar een stabiele toekomst. Dit bevorderen wij op verschillende manieren: Wij zoeken samen met de cliënt naar de juiste woonvorm. Zo kan het zijn dat een cliënt begint met begeleid wonen, en later doorgroeit naar een zelfstandige studio met ambulante hulp om vanuit daar weer verder te groeien. Sociale contacten zijn van groot belang. Daarom organiseren wij sociale activiteiten (zoals samen avondeten, sporten, zwemmen in de zomer) en initiëren wij contact tussen verschillende cliënten.",
+    "Het is van groot belang dat de cliënt tot zelfontplooiing komt. Daarom stimuleren wij in studie & werk. Samen kijken wij welke studie gepast zou kunnen zijn en in welke vorm. Voor werk werken wij samen met Next@Work, waar activerend werk wordt geboden. Vanuit Next bieden wij tevens diverse mogelijkheden, zoals cognitieve gedragstherapie, maar ook creatieve ontplooiing door middel van zangles, pianoles, rollenspellen en theater.",
+  ],
   buttonLabel: "",
   imgStart: "start",
   img: KlusImage,

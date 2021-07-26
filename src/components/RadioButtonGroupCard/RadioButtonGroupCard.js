@@ -60,7 +60,7 @@ const RadioInput = ({ label, value, checked, setter }) => {
     <label className="radio">
       <input
         type="radio"
-        checked={checked == value}
+        checked={checked === value}
         onChange={() => setter(value)}
       />
       <span>{label}</span>

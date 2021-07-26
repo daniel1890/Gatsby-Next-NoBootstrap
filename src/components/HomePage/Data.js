@@ -15,8 +15,10 @@ export const homeObjOne = {
   lightTextDesc: true,
   topLine: "Next",
   headLine: "Next@Work",
-  description:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vero reiciendis nobis impedit ex, molestias numquam pariatur optio, delectus dolorum sit magnam cum. Doloribus nobis quos eos vero odit blanditiis eum? Molestias id et soluta laborum maiores. Ex pariatur voluptates aliquam quis. Sit explicabo voluptates, libero veritatis iste error quam iusto vero ducimus expedita eveniet adipisci ipsa sint sed corporis accusantium, voluptatum distinctio voluptatibus vitae saepe. Nobis culpa similique iste illo deserunt distinctio tenetur et provident velit consectetur, cum neque officia eaque, quod voluptates ipsum, voluptatibus ratione. Suscipit asperiores eos, accusamus minima cupiditate animi eveniet, doloribus, eaque officiis quo natus.",
+  description: [
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vero reiciendis nobis impedit ex, molestias numquam pariatur optio, delectus dolorum sit magnam cum. Doloribus nobis quos eos vero odit blanditiis eum? Molestias id et soluta laborum maiores. Ex pariatur voluptates aliquam quis.",
+    "Sit explicabo voluptates, libero veritatis iste error quam iusto vero ducimus expedita eveniet adipisci ipsa sint sed corporis accusantium, voluptatum distinctio voluptatibus vitae saepe. Nobis culpa similique iste illo deserunt distinctio tenetur et provident velit consectetur, cum neque officia eaque, quod voluptates ipsum, voluptatibus ratione. Suscipit asperiores eos, accusamus minima cupiditate animi eveniet, doloribus, eaque officiis quo natus.",
+  ],
   buttonLabel: "",
   imgStart: "start",
   img: Image1,
@@ -66,8 +68,9 @@ export const AlgemeneCards = {
       imageSrc: HardloopImage,
       cardTitle: "Voor Cliënten",
       cardDesc:
-        "Ben jij op zoek naar een veilige en rustige woonomgeving die kleinschalig is, waar contact en betrokkenheid centraal staan? Dan is NEXT jouw volgende stap!Ben ",
+        "Ben jij op zoek naar een veilige en rustige woonomgeving die kleinschalig is, waar contact en betrokkenheid centraal staan? Dan is NEXT jouw volgende stap!",
       btnDesc: "Meer Informatie",
+      btnLink: "/clienten/client",
     },
     {
       imageSrc: WandelImage,

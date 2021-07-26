@@ -9,7 +9,7 @@ function ClientTevrForm() {
   const [q3, setQ3] = useState("")
   const [q4, setQ4] = useState("")
   const [q5, setQ5] = useState("")
-  const [text, setText] = useState({ tips: "Schrijf hier jouw tips..." })
+  const [text, setText] = useState("")
 
   const labels = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
   const values = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
@@ -128,11 +128,10 @@ const TextArea = ({ textAreaHeader, text, setText }) => {
       <h3>{textAreaHeader}</h3>
       <textarea
         className="radioform-textarea"
-        onChange={e => setText({ ...text, tips: e.target.value })}
-        value={text.tips}
-      >
-        Schrijf hier jouw tips....
-      </textarea>
+        onChange={e => setText({ text: e.target.value })}
+        value={text.text}
+        placeholder="Schrijf hier jouw tips...."
+      ></textarea>
     </div>
   )
 }

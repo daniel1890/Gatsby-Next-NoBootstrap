@@ -55,8 +55,9 @@ export const mindfullHero = {
   lightTextDesc: true,
   topLine: "Cliënten",
   headLine: "",
-  description:
+  description: [
     "Na een periode van opname blijkt het niet gemakkelijk het dagelijks leven weer op te pakken of een nieuwe invulling te vinden. Werk behouden of nieuw werk vinden is lastig. Het onderhouden van contacten en relaties is niet altijd eenvoudig, evenals wonen. Loop jij hier tegenaan? Next biedt hulp.",
+  ],
   buttonLabel: "",
   imgStart: false,
   img: mindfullImage,
@@ -69,8 +70,9 @@ export const hardloopHero = {
   lightTextDesc: true,
   topLine: "Verwijzing en kosten",
   headLine: "Verwijzing en kosten",
-  description:
+  description: [
     "Voor aanmelding bij Next is een mondelijke of schriftelijke verwijzing nodig. Dat kan via de wijkcoach (zie ook pagina Verwijzers). Zodra de verwijzing binnen is, plannen we een intake gesprek. De kosten voor de begeleiding van Next worden vergoed vanuit de WMO. Hiervoor betaal je, afhankelijk van je inkomen, een eigen bijdrage aan het CAK. Je wijkcoach kan je hierover meer vertellen. Naast deze eigen bijdrage betaal je ook huur voor je kamer of studio bij Next.",
+  ],
   buttonLabel: "",
   imgStart: true,
   img: hardloopImage,
@@ -83,8 +85,9 @@ export const bespreekHero = {
   lightTextDesc: false,
   topLine: "Wachtlijst",
   headLine: "Wachtlijst",
-  description:
+  description: [
     "Ambulante begeleiding kan gemiddeld vanaf de aanmelding en intake na 0-3 weken starten. Voor een woonplek op een van onze locaties voor groepswonen of intensieve begeleiding met 24-uurs bereikbaarheid geldt dat de wachttijd afhankelijk is van de doorstroom en de match met de locatie en de medebewoners. De gemiddelde wachttijd hiervoor is 6-12 maanden",
+  ],
   buttonLabel: "",
   imgStart: false,
   img: bespreekImage,

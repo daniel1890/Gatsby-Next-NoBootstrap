@@ -33,15 +33,19 @@ function HeroSection({
               <h1 className={lightText ? "heading" : "heading dark"}>
                 {headline}
               </h1>
-              <p
-                className={
-                  lightTextDesc
-                    ? "home__hero-subtitle light"
-                    : "home__hero-subtitle dark"
-                }
-              >
-                {description}
-              </p>
+
+              {description.map((description, index) => (
+                <p
+                  key={index}
+                  className={
+                    lightTextDesc
+                      ? "home__hero-subtitle light"
+                      : "home__hero-subtitle dark"
+                  }
+                >
+                  {description}
+                </p>
+              ))}
             </div>
           </div>
         </div>
