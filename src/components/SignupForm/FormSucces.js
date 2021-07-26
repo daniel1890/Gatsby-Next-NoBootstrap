@@ -1,5 +1,4 @@
 import React from "react"
-import StaticImage from "gatsby-plugin-image"
 
 const FormSucces = () => {
   return (
@@ -7,7 +6,7 @@ const FormSucces = () => {
       <div className="signupform-succes">We hebben uw bericht ontvangen!</div>
       <img
         src="..\images\img-2.svg"
-        alt="succes-image"
+        alt="succes"
         className="signupform-img-2"
       ></img>
     </div>

@@ -26,7 +26,7 @@ function Cards(props) {
               <h3>{card.cardTitle}</h3>
               <p>{card.cardDesc}</p>
               <div className="btn__holder">
-                <Link to={card.btnLink}>
+                <a href={card.btnLink}>
                   <Button
                     className="card__btn"
                     buttonSize="btn--medium"
@@ -34,7 +34,7 @@ function Cards(props) {
                   >
                     {card.btnDesc}
                   </Button>
-                </Link>
+                </a>
               </div>
             </div>
           </div>
