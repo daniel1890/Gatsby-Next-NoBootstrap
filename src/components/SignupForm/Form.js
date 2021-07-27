@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import FormSignup from "./FormSignup"
 import FormSucces from "./FormSucces"
+import FormLeft from "./FormLeft"
 import "./Form.css"
 
 const Form = () => {
@@ -13,7 +14,9 @@ const Form = () => {
   return (
     <>
       <div className="signupform-container">
-        <div className="signupform-content-left"></div>
+        <div className="signupform-content-left">
+          <FormLeft></FormLeft>
+        </div>
 
         {!isSubmitted ? <FormSignup submitForm={submitForm} /> : <FormSucces />}
       </div>
