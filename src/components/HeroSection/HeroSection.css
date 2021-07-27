@@ -112,10 +112,15 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .hero__row .col {
+    max-width: 75vw;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 350px) {
   .hero__row .col {
-    width: 90vw;
-
-    padding: 0 0;
+    max-width: 90vw;
   }
 }

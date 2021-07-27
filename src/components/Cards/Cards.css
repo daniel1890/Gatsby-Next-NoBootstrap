@@ -93,6 +93,12 @@
   }
 }
 
+@media screen and (max-width: 550px) {
+  .singlecard__container {
+    max-width: 75vw;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .singlecard__container {
     max-width: 90vw;
