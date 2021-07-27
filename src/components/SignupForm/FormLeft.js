@@ -1,4 +1,5 @@
 import React from "react"
+import LeafletMap from "../LeafletMap/LeafletMap"
 
 const FormLeft = () => {
   return (
@@ -16,6 +17,9 @@ const FormLeft = () => {
         </div>
 
         <h1>Hoofdlocatie</h1>
+        <div className="signupform-contact-content">
+          <LeafletMap></LeafletMap>
+        </div>
       </div>
     </div>
   )
