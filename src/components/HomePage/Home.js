@@ -4,15 +4,10 @@ import Cards from "../Cards/Cards"
 import { homeObjOne, AlgemeneCards } from "./Data"
 import { mdwks } from "./Data"
 import FPImage from "../FrontpageImage/FPImage"
-import ContainerFade from "../ContainerFade/ContainerFade"
 import { Button } from "../Button/Button"
 import Layout from "../layout"
 
 function Home() {
-  const top = {
-    position: true,
-  }
-
   return (
     <Layout>
       <FPImage />

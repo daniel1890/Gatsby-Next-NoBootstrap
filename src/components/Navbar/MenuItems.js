@@ -11,7 +11,7 @@ export const MenuItems = [
   },
   {
     title: "Verwijzers",
-    url: "#",
+    url: "/verwijzers",
     cName: "nav-links",
   },
   {

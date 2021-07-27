@@ -5,7 +5,7 @@ const FormSucces = () => {
     <div className="signupform-content-right">
       <div className="signupform-succes">We hebben uw bericht ontvangen!</div>
       <img
-        src="..\images\img-2.svg"
+        src="../../images/gatsby-astronaut.png"
         alt="succes"
         className="signupform-img-2"
       ></img>

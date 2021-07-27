@@ -84,6 +84,7 @@
 .home__hero-img {
   object-fit: cover;
   max-width: 100%;
+  min-width: 500px;
   max-height: 600px;
   height: auto;
   margin-top: 0;
@@ -105,9 +106,9 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .hero__row .col {
-    max-width: 75%;
+@media screen and (max-width: 800px) {
+  .home__hero-img {
+    min-width: 200px;
   }
 }
 

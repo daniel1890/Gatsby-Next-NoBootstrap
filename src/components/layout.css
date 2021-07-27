@@ -1,3 +1,9 @@
+:root {
+  --primary: #dfa320;
+  --blue: #023770;
+  --darkblue: #1c2237;
+}
+
 body,
 html {
   width: 100%;
