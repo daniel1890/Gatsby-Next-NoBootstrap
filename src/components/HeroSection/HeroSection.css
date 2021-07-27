@@ -12,7 +12,7 @@
   row-gap: 6rem;
   justify-content: center;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 11%;
 }
 
 .reverse-column {
@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .home__hero-img {
     min-width: 200px;
   }

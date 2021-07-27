@@ -7,11 +7,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-auto-rows: auto;
-  grid-column-gap: 10rem;
+  grid-column-gap: 5rem;
   grid-row-gap: 4rem;
   justify-content: center;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 11%;
 }
 
 .cards__container__4cards {
@@ -22,7 +22,7 @@
   grid-row-gap: 4rem;
   justify-content: center;
   align-items: center;
-  padding: 0 10%;
+  padding: 0 11%;
 }
 
 .singlecard__info {
