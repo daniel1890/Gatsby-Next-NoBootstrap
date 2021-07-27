@@ -4,7 +4,7 @@
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   border-radius: 3px;
-  height: 600px;
+  height: 650px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -94,7 +94,6 @@
   font-size: 0.8rem;
   margin-bottom: 10px;
   color: #fff;
-  margin-left: 1rem;
 }
 
 .signupform-input {
@@ -130,6 +129,10 @@
   font-weight: 600;
 }
 
+.ui-autocomplete {
+  position: relative;
+}
+
 @media screen and (max-width: 1200px) {
   .signupform-container {
     width: 90vw;
@@ -139,7 +142,7 @@
 @media screen and (max-width: 800px) {
   .signupform-container {
     grid-template-columns: 1fr;
-    height: 1000px;
+    height: 1225px;
     width: 85vw;
   }
 }
