@@ -23,6 +23,8 @@ const LeafletMap = () => {
   )
 }
 
+// Custom react hook die nodig is omdat gatsby een statisch site genereerd, tijdens build time moet gecontroleerd worden of de map component mounted is voordat
+// deze rendered kan worden door de DOM.
 function useHasMounted() {
   const [hasMounted, setHasMounted] = useState(false)
   useEffect(() => {
