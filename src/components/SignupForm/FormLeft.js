@@ -18,7 +18,7 @@ const FormLeft = () => {
 
         <h1>Hoofdlocatie</h1>
         <div className="signupform-contact-content">
-          <LeafletMap></LeafletMap>
+          <LeafletMap className="leafletmap-element"></LeafletMap>
         </div>
       </div>
     </div>

@@ -72,7 +72,7 @@
 }
 
 .signupform .signupform-inputs .signupform-input {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .signupform .signupform-inputs {
@@ -84,15 +84,16 @@
 }
 
 .signupform-inputs p {
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
+  position: absolute;
+  font-size: 0.7rem;
+  margin-top: -1.25rem;
   color: #f00e0e;
 }
 
 .signupform .signupform-label {
   display: inline-block;
   font-size: 0.8rem;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   color: #fff;
 }
 
@@ -155,7 +156,7 @@
 }
 
 .signupform-contact-container h1 {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   text-align: start;
   margin-bottom: 1rem;
   color: #fff;
@@ -165,11 +166,15 @@
   text-align: start;
   color: #fff;
   list-style-type: none;
+  margin-left: -1.75rem;
 }
 
-@media screen and (max-width: 1200px) {
+.leafletmap-element {
+}
+
+@media screen and (max-width: 1250px) {
   .signupform-container {
-    width: 90vw;
+    width: 92.5vw;
   }
 }
 
@@ -182,6 +187,10 @@
 }
 
 @media screen and (max-width: 400px) {
+  .signupform-container {
+    width: 95vw;
+  }
+
   .signupform-input {
     width: 95%;
   }
