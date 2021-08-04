@@ -1,14 +1,17 @@
 import React, { useState } from "react"
 import { MenuItems } from "./MenuItems"
+import { Dropdown } from "./Dropdown"
 import Logo from "../../images/Next-logo.png"
 import "./MyNavbar.css"
 import { Button } from "../Button/Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"
+import { faBars, faTimes, faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "gatsby"
 
 function MyNavbar() {
   const [clicked, setClick] = useState(false)
+  const [dropdown, setDropdown] = useState(false)
+
   function clickMenu() {
     setClick(click => (click = !click))
   }
@@ -26,7 +29,14 @@ function MyNavbar() {
           return (
             <li key={index}>
               <Link as="a" className={item.cName} to={item.url}>
-                {item.title}
+                {item.dropDown !== "" ? (
+                  <>
+                    {item.title + " "}
+                    <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
+                  </>
+                ) : (
+                  item.title
+                )}
               </Link>
             </li>
           )

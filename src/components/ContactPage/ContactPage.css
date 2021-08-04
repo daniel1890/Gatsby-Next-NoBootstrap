@@ -7,11 +7,11 @@
 }
 
 .signupform-header-card-container {
-  max-width: 1250px;
-  margin: 6rem auto 3rem;
+  max-width: 1500px;
+  margin: 5rem auto 3rem;
 }
 
-@media screen and (max-width: 1275px) {
+@media screen and (max-width: 1575px) {
   .signupform-header-card-container {
     max-width: 95vw;
   }
