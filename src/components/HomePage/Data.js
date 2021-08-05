@@ -78,6 +78,7 @@ export const AlgemeneCards = {
       cardDesc:
         "Next werkt op basis van wetenschappelijke kennis en maatschappelijke inzichten om te komen tot een integraal zorgaanbod. Neem contact op voor een oriëntered gesprek.",
       btnDesc: "Meer Informatie",
+      btnLink: "/verwijzers",
     },
     {
       imageSrc: BespreekImage,

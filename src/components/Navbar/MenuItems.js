@@ -11,13 +11,13 @@ export const MenuItems = [
     cName: "nav-links",
     dropDown: [
       {
-        linkName: "Cliënt",
+        title: "Cliënt",
         path: "clienten/client",
         cName: "dropdown-link",
       },
 
       {
-        linkName: "CliëntTevredenheid",
+        title: "CliëntTevredenheid",
         path: "clienten/client-tevredenheid",
         cName: "dropdown-link",
       },

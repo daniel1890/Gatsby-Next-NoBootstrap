@@ -13,8 +13,10 @@ Dit wordt een website gebouwt voor een bedrijf de bedoeling is dat er een volled
 
 - Gatsby
 - Font Awesome
+- Leaflet JS/React Leaflet
 
 ## Gatsby Plugins
 
 - gatsby-plugin-image
--
+- gatsby-plugin-react-leaflet
+- gatsby-plugin-fontawesome-css

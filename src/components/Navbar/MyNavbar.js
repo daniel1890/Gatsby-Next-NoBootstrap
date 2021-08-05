@@ -16,6 +16,24 @@ function MyNavbar() {
     setClick(click => (click = !click))
   }
 
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false)
+    }
+    else {
+      setDropdown(true)
+    }
+  }
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false)
+    }
+    else {
+      setDropdown(false)
+    }
+  }
+
   return (
     <nav className="NavbarItems">
       <Link to="/">
@@ -27,12 +45,13 @@ function MyNavbar() {
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
-            <li key={index}>
+            <li key={index} >
               <Link as="a" className={item.cName} to={item.url}>
                 {item.dropDown !== "" ? (
                   <>
                     {item.title + " "}
                     <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
+                    {dropdown && <Dropdown {...item.dropDown} />}
                   </>
                 ) : (
                   item.title
