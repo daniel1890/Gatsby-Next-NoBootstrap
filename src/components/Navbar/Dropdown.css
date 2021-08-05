@@ -2,11 +2,15 @@
   width: 200px;
   position: absolute;
   transform: translate(-50%, 0);
-  top: 80px;
+  top: 30px;
   list-style: none;
   text-align: start;
   z-index: 1;
   border-radius: 4px;
+}
+
+.dropdown-container {
+  position: relative;
 }
 
 .dropdown-menu li {

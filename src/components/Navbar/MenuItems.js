@@ -7,7 +7,7 @@ export const MenuItems = [
   },
   {
     title: "Cliënten",
-    url: "/clienten/client-tevredenheid",
+    url: "/clienten/client",
     cName: "nav-links",
     dropDown: [
       {
@@ -17,7 +17,7 @@ export const MenuItems = [
       },
 
       {
-        title: "CliëntTevredenheid",
+        title: "Cliënttevredenheid",
         path: "/clienten/client-tevredenheid",
         cName: "dropdown-link",
       },
