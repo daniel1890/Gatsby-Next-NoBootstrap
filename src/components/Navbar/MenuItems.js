@@ -12,13 +12,13 @@ export const MenuItems = [
     dropDown: [
       {
         title: "Cliënt",
-        path: "clienten/client",
+        path: "/clienten/client",
         cName: "dropdown-link",
       },
 
       {
         title: "CliëntTevredenheid",
-        path: "clienten/client-tevredenheid",
+        path: "/clienten/client-tevredenheid",
         cName: "dropdown-link",
       },
     ],

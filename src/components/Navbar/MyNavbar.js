@@ -1,12 +1,12 @@
 import React, { useState } from "react"
 import { MenuItems } from "./MenuItems"
-import { Dropdown } from "./Dropdown"
 import Logo from "../../images/Next-logo.png"
 import "./MyNavbar.css"
 import { Button } from "../Button/Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faTimes, faCaretDown } from "@fortawesome/free-solid-svg-icons"
 import { Link } from "gatsby"
+import Dropdown from "./Dropdown"
 
 function MyNavbar() {
   const [clicked, setClick] = useState(false)
@@ -19,8 +19,7 @@ function MyNavbar() {
   const onMouseEnter = () => {
     if (window.innerWidth < 960) {
       setDropdown(false)
-    }
-    else {
+    } else {
       setDropdown(true)
     }
   }
@@ -28,8 +27,7 @@ function MyNavbar() {
   const onMouseLeave = () => {
     if (window.innerWidth < 960) {
       setDropdown(false)
-    }
-    else {
+    } else {
       setDropdown(false)
     }
   }
@@ -45,13 +43,19 @@ function MyNavbar() {
       <ul className={clicked ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
-            <li key={index} >
+            <li key={index} className="nav-item">
               <Link as="a" className={item.cName} to={item.url}>
                 {item.dropDown !== "" ? (
                   <>
-                    {item.title + " "}
-                    <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
-                    {dropdown && <Dropdown {...item.dropDown} />}
+                    <li
+                      onMouseEnter={onMouseEnter}
+                      onMouseLeave={onMouseLeave}
+                      className="nav-item"
+                    >
+                      {item.title + "  "}
+                      <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
+                      {dropdown && <Dropdown {...item} />}
+                    </li>
                   </>
                 ) : (
                   item.title
