@@ -52,7 +52,7 @@ function MyNavbar() {
               <Link as="a" className={item.cName} to={item.url}>
                 {item.dropDown !== "" ? (
                   <>
-                    <li
+                    <div
                       onMouseEnter={onMouseEnter}
                       onMouseLeave={onMouseLeave}
                       className="nav-item"
@@ -63,7 +63,7 @@ function MyNavbar() {
                         style={{ padding: "0 0 0 7px" }}
                       />
                       {dropdown && <Dropdown {...item} />}
-                    </li>
+                    </div>
                   </>
                 ) : (
                   <>

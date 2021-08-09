@@ -14,11 +14,6 @@ function LoginPage({ Login, error }) {
 
   return (
     <div>
-      <div style={{ margin: "4rem 0 0 6rem", position: "absolute" }}>
-        <Link to="/">
-          <Button>Terug naar Hoofdpagina</Button>
-        </Link>
-      </div>
       <div className="login__container">
         <form className="login__form" onSubmit={submitHandler}>
           <div className="login__form-inner">
@@ -39,14 +34,20 @@ function LoginPage({ Login, error }) {
                 value={details.password}
               />
             </div>
-            <Button
-              as="input"
-              type="submit"
-              buttonSize="btn--medium"
-              buttonStyle="btn--blue"
-            >
-              Enter
-            </Button>
+            <div>
+              <Button
+                as="input"
+                type="submit"
+                buttonSize="btn--medium"
+                buttonStyle="btn--blue"
+              >
+                Enter
+              </Button>
+
+              <Link to="/">
+                <Button>Terug naar Hoofdpagina</Button>
+              </Link>
+            </div>
           </div>
         </form>
       </div>
