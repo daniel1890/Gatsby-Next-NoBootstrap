@@ -49,7 +49,7 @@
 }
 
 .dark {
-  color: #023770;
+  color: var(--darkblue);
 }
 
 .black {

@@ -26,13 +26,11 @@ function HeroSection({
           </div>
 
           <div className="col">
-            <div className="home__hero-text-wrapper">
-              <div className={lightText ? "top-line" : "top-line dark"}>
+            <div className="home__hero-text-wrapper dark">
+              <div className={lightText ? "top-line" : "top-line"}>
                 {topLine}
               </div>
-              <h1 className={lightText ? "heading" : "heading dark"}>
-                {headline}
-              </h1>
+              <h1 className={lightText ? "heading" : "heading"}>{headline}</h1>
 
               {description.map((description, index) => (
                 <p
@@ -40,7 +38,7 @@ function HeroSection({
                   className={
                     lightTextDesc
                       ? "home__hero-subtitle light"
-                      : "home__hero-subtitle dark"
+                      : "home__hero-subtitle light"
                   }
                 >
                   {description}
