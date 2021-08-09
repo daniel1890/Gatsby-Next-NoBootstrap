@@ -61,7 +61,11 @@
   display: none;
 }
 
-@media screen and (max-width: 1060px) {
+.btngroup-container {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 1175px) {
   .NavbarItems {
     position: relative;
   }

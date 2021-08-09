@@ -40,6 +40,7 @@ export const MenuItems = [
     url: "#",
     cName: "nav-links",
     dropDown: "",
+    icon: "faPhoneAlt",
   },
   {
     title: "Contact",

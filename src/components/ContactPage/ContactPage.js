@@ -22,7 +22,7 @@ const FormHeaderCard = () => {
         <h2 style={{ textAlign: "center" }}>
           Vragen? Neem contact met ons op.
         </h2>
-        <p>
+        <p style={({ textAlign: "center" }, { padding: "0 3rem" })}>
           Heb je vragen of wil je iets weten dat niet op onze website te vinden
           is? Neem dan gerust contact met ons op. Je kunt ons bereiken via
           onderstaand contactformulier of telefonisch contact opnemen. Wij

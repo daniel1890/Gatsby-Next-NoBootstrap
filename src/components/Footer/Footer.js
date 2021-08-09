@@ -1,6 +1,12 @@
 import React from "react"
 import "./Footer.css"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faEnvelope,
+  faEnvelopeAlt,
+  faPhoneAlt,
+} from "@fortawesome/free-solid-svg-icons"
 
 function Footer() {
   let today = new Date()
@@ -32,8 +38,22 @@ function Footer() {
             <h2>NEXT Arnhem</h2>
             <Link to="/">Rosendaalsestraat 414</Link>
             <Link to="/">6824 CS Arnhem</Link>
-            <Link to="/">0636353066</Link>
-            <Link to="/">info@nextarnhem.nl</Link>
+            <div>
+              <FontAwesomeIcon
+                icon={faPhoneAlt}
+                style={{ padding: "0 5px 0 0" }}
+                className="footer-faicon"
+              ></FontAwesomeIcon>
+              <Link to="/">0636353066</Link>
+            </div>
+            <div>
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                style={{ padding: "0 5px 0 0" }}
+                className="footer-faicon"
+              ></FontAwesomeIcon>
+              <Link to="/">info@nextarnhem.nl</Link>
+            </div>
           </div>
         </div>
       </div>

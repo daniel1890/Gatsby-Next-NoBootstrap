@@ -4,7 +4,12 @@ import Logo from "../../images/Next-logo.png"
 import "./MyNavbar.css"
 import { Button } from "../Button/Button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBars, faTimes, faCaretDown } from "@fortawesome/free-solid-svg-icons"
+import {
+  faBars,
+  faTimes,
+  faCaretDown,
+  faPhoneAlt,
+} from "@fortawesome/free-solid-svg-icons"
 import { Link } from "gatsby"
 import Dropdown from "./Dropdown"
 
@@ -52,23 +57,49 @@ function MyNavbar() {
                       onMouseLeave={onMouseLeave}
                       className="nav-item"
                     >
-                      {item.title + "  "}
-                      <FontAwesomeIcon icon={faCaretDown}></FontAwesomeIcon>
+                      {item.title + " "}
+                      <FontAwesomeIcon
+                        icon={faCaretDown}
+                        style={{ padding: "0 0 0 7px" }}
+                      />
                       {dropdown && <Dropdown {...item} />}
                     </li>
                   </>
                 ) : (
-                  item.title
+                  <>
+                    {item.icon ? (
+                      <FontAwesomeIcon
+                        icon={faPhoneAlt}
+                        style={{ padding: "0 5px 0 0" }}
+                      ></FontAwesomeIcon>
+                    ) : (
+                      ""
+                    )}
+                    {item.title}
+                  </>
                 )}
               </Link>
             </li>
           )
         })}
       </ul>
-      <Link to="/contact">
-        <Button buttonStyle="btn--blue">Contact</Button>
-      </Link>
+      <ButtonGroup></ButtonGroup>
     </nav>
+  )
+}
+
+const ButtonGroup = () => {
+  return (
+    <div>
+      <div className="btngroup-container">
+        <Link to="/contact">
+          <Button buttonStyle="btn--blue">Contact</Button>
+        </Link>
+        <Link to="/aanmelden">
+          <Button buttonStyle="btn--primary">Aanmelden</Button>
+        </Link>
+      </div>
+    </div>
   )
 }
 

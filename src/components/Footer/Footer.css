@@ -93,6 +93,11 @@
   color: #b1b1b1;
 }
 
+.footer-container .footer-faicon {
+  -webkit-filter: invert(100%); /* Safari/Chrome */
+  filter: invert(100%);
+}
+
 /* Social Icons */
 .social-icon-link {
   color: #fff;
