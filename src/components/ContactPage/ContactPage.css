@@ -7,19 +7,27 @@
 }
 
 .signupform-header-card-container {
-  max-width: 1500px;
+  max-width: 1525px;
   margin: 5rem auto 3rem;
 }
 
-@media screen and (max-width: 1575px) {
+@media screen and (max-width: 1550px) {
   .signupform-header-card-container {
-    max-width: 95vw;
+    max-width: 92.5vw;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .signupform-header-card-container {
-    max-width: 90vw;
+    max-width: 85vw;
+  }
+
+  .signupform-header-card {
+    padding: 1rem 0 3rem;
+  }
+
+  .signupform-header-card h2 {
+    padding: 1rem 0.25rem 0;
   }
 }
 

@@ -65,7 +65,7 @@
   display: inline-flex;
 }
 
-@media screen and (max-width: 1175px) {
+@media screen and (max-width: 1225px) {
   .NavbarItems {
     position: relative;
   }
