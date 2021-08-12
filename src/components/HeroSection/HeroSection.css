@@ -19,22 +19,14 @@
   direction: rtl;
 }
 
-<<<<<<< HEAD
-.hero__row .herosection__col {
-=======
 .hero__row .hero__col {
->>>>>>> 80b13181b4b1c1b5fcaa88171c491ebf91cb3986
   border-radius: 4px;
   padding: 0 auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-<<<<<<< HEAD
-.herosection__col {
-=======
 .hero__col {
->>>>>>> 80b13181b4b1c1b5fcaa88171c491ebf91cb3986
   grid-auto-flow: column;
   direction: ltr;
 }
@@ -98,15 +90,9 @@
   border-radius: 3px;
 }
 
-<<<<<<< HEAD
-@media screen and (max-width: 1340px) {
-  .hero__row .herosection__col {
-    width: 80%;
-=======
 @media screen and (max-width: 1300px) {
   .hero__row .hero__col {
     max-width: 80%;
->>>>>>> 80b13181b4b1c1b5fcaa88171c491ebf91cb3986
     margin-left: auto;
     margin-right: auto;
   }
@@ -116,30 +102,21 @@
   }
 }
 
-@media screen and (max-width: 813px) {
+@media screen and (max-width: 900px) {
   .home__hero-img {
     min-width: 200px;
   }
 }
 
 @media screen and (max-width: 550px) {
-<<<<<<< HEAD
-  .hero__row .herosection__col {
-    max-width: 85vw;
-=======
   .hero__row .hero__col {
     max-width: 75vw;
->>>>>>> 80b13181b4b1c1b5fcaa88171c491ebf91cb3986
     padding: 0;
   }
 }
 
 @media screen and (max-width: 350px) {
-<<<<<<< HEAD
-  .hero__row .herosection__col {
-=======
   .hero__row .hero__col {
->>>>>>> 80b13181b4b1c1b5fcaa88171c491ebf91cb3986
     max-width: 90vw;
   }
 }

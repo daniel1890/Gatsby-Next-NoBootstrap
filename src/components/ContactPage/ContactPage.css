@@ -19,7 +19,8 @@
 
 @media screen and (max-width: 900px) {
   .signupform-header-card-container {
-    max-width: 85vw;
+    max-width: 90vw;
+    padding: 1rem 0.25rem 3rem;
   }
 
   .signupform-header-card {

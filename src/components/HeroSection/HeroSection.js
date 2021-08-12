@@ -19,21 +19,13 @@ function HeroSection({
     >
       <div className="herosection-container">
         <div className={imgStart ? "hero__row" : "hero__row reverse-column"}>
-<<<<<<< HEAD
-          <div className="herosection__col">
-=======
           <div className="hero__col">
->>>>>>> 80b13181b4b1c1b5fcaa88171c491ebf91cb3986
             <div className="home__hero-img-wrapper">
               <img src={img} alt={alt} className="home__hero-img" />
             </div>
           </div>
 
-<<<<<<< HEAD
-          <div className="herosection__col">
-=======
           <div className="hero__col">
->>>>>>> 80b13181b4b1c1b5fcaa88171c491ebf91cb3986
             <div className="home__hero-text-wrapper greyBg">
               <div className={lightText ? "top-line" : "top-line"}>
                 <h2>{topLine}</h2>

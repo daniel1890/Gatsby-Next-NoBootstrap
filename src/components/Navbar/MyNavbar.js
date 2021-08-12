@@ -1,53 +1,41 @@
-import React, { useState, useEffect } from "react"
-import { MenuItems } from "./MenuItems"
-import Logo from "../../images/Next-logo.png"
-import "./MyNavbar.css"
 import { Button } from "../Button/Button"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import Dropdown from "./Dropdown"
 import {
   faBars,
   faTimes,
   faCaretDown,
   faPhoneAlt,
 } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link } from "gatsby"
-import Dropdown from "./Dropdown"
+import Logo from "../../images/Next-logo.png"
+import { MenuItems } from "./MenuItems"
+import "./MyNavbar.css"
+import React, { useState, useEffect } from "react"
 
 function MyNavbar() {
   const [clicked, setClick] = useState(false)
   const [dropdown, setDropdown] = useState(false)
-  const [mobileMenu, setMobileMenu] = useState(false)
 
   function clickMenu() {
     setClick(click => (click = !click))
   }
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 1175) {
-      setDropdown(false)
+    if (window.innerWidth < 1200) {
+      setDropdown(true)
     } else {
       setDropdown(true)
     }
   }
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 1175) {
+    if (window.innerWidth < 1200) {
       setDropdown(false)
     } else {
       setDropdown(false)
     }
   }
-
-  const handleResize = () => {
-    window.innerWidth < 1175 ?
-      setMobileMenu(true) :
-      setMobileMenu(false)
-  }
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize)
-  })
-
 
   return (
     <nav className="NavbarItems">
@@ -62,14 +50,14 @@ function MyNavbar() {
           return (
             <li key={index} className="nav-item">
               <Link as="a" className={item.cName} to={item.url}>
-                {item.dropDown !== "" & (!mobileMenu) ? (
+                {item.dropDown !== "" ? (
                   <>
                     <div
                       onMouseEnter={onMouseEnter}
                       onMouseLeave={onMouseLeave}
                       className="nav-item"
                     >
-                      {item.title + " "}
+                      {item.title}
                       <FontAwesomeIcon
                         className="fa-caret-down"
                         icon={faCaretDown}
