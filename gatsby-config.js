@@ -36,6 +36,16 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: "http://localhost:1337",
+        collectionTypes: [
+          "medewerker",
+        ],
+        queryLimit: 1000,
+      },
+    },
     `gatsby-plugin-gatsby-cloud`,
     `gatsby-plugin-react-leaflet`,
     `gatsby-plugin-fontawesome-css`,

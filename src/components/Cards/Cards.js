@@ -1,7 +1,6 @@
 import React from "react"
 import "./Cards.css"
 import { Button } from "../Button/Button"
-import { Link } from "gatsby"
 
 function Cards(props) {
   console.log(props)
