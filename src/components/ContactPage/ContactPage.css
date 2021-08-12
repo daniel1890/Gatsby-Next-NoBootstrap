@@ -29,6 +29,10 @@
   .signupform-header-card h2 {
     padding: 1rem 0.25rem 0;
   }
+
+  .signupform-header-card {
+    padding: 1rem 0.5rem 3rem;
+  }
 }
 
 @media screen and (max-width: 450px) {

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { MenuItems } from "./MenuItems"
 import Logo from "../../images/Next-logo.png"
 import "./MyNavbar.css"
@@ -16,13 +16,14 @@ import Dropdown from "./Dropdown"
 function MyNavbar() {
   const [clicked, setClick] = useState(false)
   const [dropdown, setDropdown] = useState(false)
+  const [mobileMenu, setMobileMenu] = useState(false)
 
   function clickMenu() {
     setClick(click => (click = !click))
   }
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 1175) {
       setDropdown(false)
     } else {
       setDropdown(true)
@@ -30,12 +31,23 @@ function MyNavbar() {
   }
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 1175) {
       setDropdown(false)
     } else {
       setDropdown(false)
     }
   }
+
+  const handleResize = () => {
+    window.innerWidth < 1175 ?
+      setMobileMenu(true) :
+      setMobileMenu(false)
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize)
+  })
+
 
   return (
     <nav className="NavbarItems">
@@ -50,7 +62,7 @@ function MyNavbar() {
           return (
             <li key={index} className="nav-item">
               <Link as="a" className={item.cName} to={item.url}>
-                {item.dropDown !== "" ? (
+                {item.dropDown !== "" & (!mobileMenu) ? (
                   <>
                     <div
                       onMouseEnter={onMouseEnter}
@@ -59,6 +71,7 @@ function MyNavbar() {
                     >
                       {item.title + " "}
                       <FontAwesomeIcon
+                        className="fa-caret-down"
                         icon={faCaretDown}
                         style={{ padding: "0 0 0 7px" }}
                       />
@@ -95,9 +108,11 @@ const ButtonGroup = () => {
         <Link to="/contact">
           <Button buttonStyle="btn--blue">Contact</Button>
         </Link>
+        {/*
         <Link to="/aanmelden">
           <Button buttonStyle="btn--primary">Aanmelden</Button>
         </Link>
+        */}
       </div>
     </div>
   )
