@@ -19,7 +19,7 @@
 }
 
 .dark__card {
-  background: linear-gradient(45deg, #1c2237 0%, #1c2237 100%);
+  background: linear-gradient(45deg, var(--darkblue) 0%, var(--darkblue) 100%);
 }
 
 .light__card {

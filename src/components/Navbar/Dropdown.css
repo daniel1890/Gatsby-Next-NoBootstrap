@@ -14,13 +14,18 @@
 }
 
 .dropdown-menu li {
-  background-color: var(--primary);
+    background-color: var(--white);
   cursor: pointer;
 }
 
 .dropdown-menu li:hover {
   background-color: var(--blue);
 }
+
+.dropdown-link:hover {
+    color: var(--primary);
+}
+
 
 .dropdown-menu.clicked {
   display: none;
@@ -31,6 +36,6 @@
   height: 100%;
   width: 100%;
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 16px;
 }

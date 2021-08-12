@@ -17,15 +17,15 @@ function HeroSection({
     <div
       className={greyBg ? "home__hero-section greyBg" : "home__hero-section"}
     >
-      <div className="hersection-container">
+      <div className="herosection-container">
         <div className={imgStart ? "hero__row" : "hero__row reverse-column"}>
-          <div className="col">
+          <div className="hero__col">
             <div className="home__hero-img-wrapper">
               <img src={img} alt={alt} className="home__hero-img" />
             </div>
           </div>
 
-          <div className="col">
+          <div className="hero__col">
             <div className="home__hero-text-wrapper greyBg">
               <div className={lightText ? "top-line" : "top-line"}>
                 <h2>{topLine}</h2>

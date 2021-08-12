@@ -16,12 +16,12 @@ function OverOnsPage() {
           <TwoInfoCards {...rij1__tekstContent}></TwoInfoCards>
         </div>
 
-        <div id="rij2__tekst">
-          <TwoInfoCards {...rij2__tekstContent}></TwoInfoCards>
-        </div>
-
         <div id="rij3__heroimage">
           <HeroSection {...klusHero}></HeroSection>
+        </div>
+
+        <div id="rij2__tekst">
+          <TwoInfoCards {...rij2__tekstContent}></TwoInfoCards>
         </div>
       </div>
     </Layout>

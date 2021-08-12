@@ -1,9 +1,9 @@
 import KlusImage from "../../images/Klusteam-scaled.jpeg"
 
 export const klusHero = {
-  greyBg: false,
-  lightText: false,
-  lightTextDesc: false,
+  greyBg: true,
+  lightText: true,
+  lightTextDesc: true,
   topLine: "Bouwen aan de Toekomst",
   headLine: "Next@Work",
   description: [

@@ -19,12 +19,14 @@
   direction: rtl;
 }
 
-.hero__row .col {
+.hero__row .hero__col {
   border-radius: 4px;
   padding: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.col {
+.hero__col {
   grid-auto-flow: column;
   direction: ltr;
 }
@@ -59,7 +61,7 @@
 }
 
 .greyBg {
-  background-color: #1c2237;
+  background-color: var(--darkblue);
   /*background-color: rgb(163, 163, 163); */
 }
 
@@ -89,7 +91,7 @@
 }
 
 @media screen and (max-width: 1300px) {
-  .hero__row .col {
+  .hero__row .hero__col {
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -107,14 +109,14 @@
 }
 
 @media screen and (max-width: 550px) {
-  .hero__row .col {
+  .hero__row .hero__col {
     max-width: 75vw;
     padding: 0;
   }
 }
 
 @media screen and (max-width: 350px) {
-  .hero__row .col {
+  .hero__row .hero__col {
     max-width: 90vw;
   }
 }
