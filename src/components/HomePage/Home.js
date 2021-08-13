@@ -32,7 +32,6 @@ function Home() {
     }
   `)
   const medewerkers = data.allStrapiMedewerker.nodes
-  console.log(medewerkers)
 
   return (
     <Layout>

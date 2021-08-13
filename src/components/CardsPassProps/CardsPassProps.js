@@ -4,7 +4,13 @@ import { Button } from "../Button/Button"
 import { Link } from "gatsby"
 
 const CardsPassProps = props => {
-  const medewerkers = [props[0], props[1], props[2], props[3]]
+  // Deze code is nodig omdat de graphql query niet een zuivere array teruggeeft, hierdoor stop ik de waardes in een nieuwe array om hierover heen te loopen.
+  const medewerkers = []
+
+  for (var medewerker in props) {
+    medewerkers.push(props[medewerker])
+  }
+
   console.log(medewerkers)
 
   return (
