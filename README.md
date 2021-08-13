@@ -67,6 +67,41 @@ Deze pagina start met een inlogscherm want dit formulier mag alleen gebruikt wor
 
 1. Creeër een aparte pagina met een simpel login scherm, de content is alleen beschermd achter een wachtwoord, gebruik **useState hooks** om de state van het wachtwoord in op te slaan.
 
+#### CardHeader component
+
+Een simpele card container met wat text.
+
+#### ClientTevrForm component
+
+1. Creeër een _RadioButtonGroupCard_ component, in dit component wordt met de _useState_ hook de state opgeslagen van welke radiobutton checked is, op het begin is deze waarde leeg en wanneer de gebruiker een knop indrukt zal de useState hook de waarde opslaan. de useState hook moet wel van topdown passed worden naar dit component dus in de parameters zal dit component een state ontvangen, dit maakt het makkelijk om meerdere RadioButtonGroupCard componenten te maken en deze alle een unieke state te geven. Mbv flexbox wordt de indeling van de het formulier bepaalt.
+2. In de _ClientTevrForm_ component is het nu makkelijk om meerdere RadioButtonKaarten te creeëren en deze een unieke state te geven. gebruikt flexbox en flex-direction: column om de kaarten onder elkaar te weergeven.
+
+### Verwijzers Pagina
+
+Deze pagina bestaat uit al gecreeërde componenten die makkelijke te recyclen zijn, naast de navbar en footer:
+
+- 2 \* _TwoInfoCards_ component.
+- 1 \* _HeroSection_ component.
+
+### Contact Pagina
+
+In deze pagina kan de gebruiker een formulier in vullen om contact op te nemen met het bedrijf, naar de navbar en footer:
+
+- _FormHeaderCard_ component.
+- _SignupForm_ component.
+
+#### FormHeaderCard component
+
+Dit is een simpele card container met wat tekst.
+
+#### SignupForm component
+
+Dit component bestaat uit een grid wat verdeelt is in 2 gelijke stukken, in het linkse gedeelte is de contactinformatie van het bedrijf en de locatie weergeven, de locatie is weergeven in een leaflet component, in het rechtse gedeelte is het contactformulier weergeven, het formulier bevat validatie en wordt alleen verzonden wanneer alle velden ingevuld zijn, wanneer het formulier verzonden is wordt een leuke svg afbeelding weergeven.
+
+1. Voeg de Leaflet en React Leaflet plugin toe met npm, Leaflet is nodig om de een wereldmap te weergeven en React Leaflet is nodig omdat React component based is en dit maakt werken met Leaflet iets gebruiksvriendelijker in React.
+2. Creeër een _LeafletMap_ component, hierin zal alle informatie ingevuld worden die nodig is om de map te weergeven, aan dit component wordt ook een _hasMounted_ hook toegevoegd, deze is nodig omdat Gatsby een Static Site Generator is, tijdens build time moet gecontroleerd worden of de map component mounted is voordat deze rendered kan worden door de DOM.
+3.
+
 ## Node Packages
 
 - Gatsby
